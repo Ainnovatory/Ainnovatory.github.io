@@ -1,47 +1,107 @@
-h3 {
-  font-size: 20pt;
-  color: rgb(148, 73, 219);
-  /* Koment!!!!*/
-}
-
-#id1,
-#id2 {
-  color: rgb(223, 29, 68);
-}
-
-.class_name {
-  color: crimson;
-}
 body {
-  background-color: rgb(199, 214, 241);
+    margin: 0px;
+    /* внешний отступ */
 }
 
-footer {
-  text-align: center;
-  margin-top: 50px;
-  padding: 10px;
-  border: 2px solid black;
+.card {
+    width: 500px;
+    /* ширина карточки */
+    text-align: center;
+    /* выравнивание текста в заголовке, абзаце и других блочных элементах */
+    margin: 33px auto;
+    /* выравнивание карточки на страничке */
+    border: 2px solid royalblue;
+    /* граница кврточки */
 }
 
-span {
-  font-size: 25px;
+.backgrounnd {
+    /* background-color: royalblue; */
+    /* цвет фона заголовка, абзаца */
+    height: 33vh;
+    /* высота блока от родителя */
+    background-image: url(./fon/oboi-2021-3.png);
+    background-repeat: no-repeat;
+    /* Устанавливает одно фоновое изображение в элементе без его повторений, положение которого определяется свойством background-position (по умолчанию в левом верхнем углу). */
+    background-position: center center;
+    /* Значение background-size в CSS позволяет задавать размер фонового изображения. */
+    background-size: cover;
+    /* Масштабирует изображение как можно больше c сохранением пропорций изображения (изображение не становится сплющенным). Когда изображение и контейнер имеют разные размеры, изображение обрезается либо влево / вправо, либо сверху / снизу. */
 }
 
-p {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 700;
+.info {
+    margin-top: -100px;
+    /* чтобы залесть на блок, который выше */
 }
 
-.First-p {
-  font-family: cursive;
-  font-weight: bolder;
+.wrapper-avatar {}
+
+.avatar {
+    width: 200px;
+    /* ширина картинки */
+    height: 200px;
+    border-radius: 50%;
+    /* скругление картинки */
+    border: 2px solid rgb(130, 135, 140);
+    /* рамка границы картинки */
 }
 
-.main-header a {
-  color: rgb(25, 0, 250);
-  text-decoration: solid rgb(31, 73, 211) 2px underline;
+.content {
+    width: 80%;
+    /* ширина блока content*/
+    margin: 0 auto;
+    /* выравнивание блока content*/
 }
 
-p ~ p {
-  font-size: 15px;
+.socials {
+    background-color: rgb(65, 140, 240);
+    /* цвет фона заголовка, абзаца */
+    height: 10vh;
+    /* высота блока socials*/
+}
+
+.div-container {
+    display: flex;
+    /* flex-basis: 100%; */
+    /* Flex-basis задает начальный размер элемента относительно главной оси флекс-контейнера */
+    align-items: center;
+    justify-content: center;
+}
+
+.div-container>ul {
+    list-style-image: url(./icon/map-marker.png);
+    /* сменмть стиль списка li на картинку */
+    font-size: 16pt;
+    margin: 0px 0px 0px 0px;
+    font-weight: bold;
+    /* жирное начертание шифта */
+}
+
+.button-1 {
+    background-color: rgb(120, 228, 238);
+    /* цвет кнопки */
+    color: rgb(0, 0, 0);
+    /* цвет надписи кнопки */
+    padding: 10px 10px 10px 10px;
+    /* Свойство padding устанавливает внутренние отступы/поля со всех сторон элемента */
+    /* 1em это и есть 16px */
+}
+
+.button-2 {
+    background-color: rgb(38, 254, 250);
+    /* цвет кнопки */
+    color: rgb(0, 0, 0);
+    /* цвет надписи кнопки */
+    padding: 10px 10px 10px 10px;
+    /* Свойство padding устанавливает внутренние отступы/поля со всех сторон элемента */
+    /* 1em это и есть 16px */
+}
+
+.socials>div {
+    display: inline-block;
+    /* Выставить div в строчку*/
+    width: 30px;
+    /* Ширина кнопок*/
+    padding-top: 4vh;
+    /* Кнопки почти по средине нижнего блока*/
+    
 }
